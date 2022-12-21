@@ -1,6 +1,33 @@
 <!doctype html>
 <html>
 <head>
+	<style>
+		body{
+			background-color: #F9EBEA;
+		}
+		
+		a{
+			text-decoration: none;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		}
+		
+		h1{
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+			color: #763c28;
+		}
+		
+		a:link{
+			color: #696969;
+		}
+		
+		a:visited{
+			color: #696969;
+		}
+		
+		a:hover{
+			color: #302431;
+		}
+	</style>
 <meta charset="utf-8">
 <title>AM | Asesoria</title>
 <link rel="icon" type="image/x-icon" href="Imagenes/logo2.png">
@@ -9,7 +36,7 @@
 <body>
 	<header>
 		<div align="left">
-			<img src="imagenes/logo2.png" alt="Logo" width="250" height="120">	<!--- INSERTAR LOGO --->
+			<a href="Index.html"><img src="imagenes/logo2.png" alt="Logo" width="250" height="120"></a>	<!--- INSERTAR LOGO --->
 		</div>
 		<div align="right">
 			<a href="registrarse.html">Sing In</a>
@@ -50,32 +77,32 @@
 					  
 					<tr>
 					  <td><label for="ame">Name</label></td>
-					  <td><input type="text" id="name" name="name"></td>
+					  <td><input type="text" id="name" name="name" maxlength="25" required autofocus></td>
 					</tr>
 					
 					<tr>
 					  <td><label for="last">Last Name</label></td>
-					  <td><input type="text" id="lastname" name="lastname"></td>
+					  <td><input type="text" id="lastname" name="lastname" maxlength="30" required></td>
 					</tr>
 					  
 					<tr>
 					  <td><label for="email">Email</label></td>
-					  <td><input type="email" id="email" name="email"></td>
+					  <td><input type="email" id="email" name="email" required></td>	
 					</tr>
 					  
 					<tr>
 					  <td><label for="phone">Phone</label></td>
-					  <td><input type="tel" id="phone" name="phone"></td>
+					  <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" required></td>
 					</tr>
 					  
 					<tr>
 					  <td><label for="date">Datefor the call</label></td>
-					  <td><input type="date" id="date" name="date"></td>
+					  <td><input type="date" id="date" name="date" value="2022-06-01" required></td>
 					</tr>
 
 					<tr>
 					  <td><label for="time">Call time</label></td>
-					  <td><input type="time" id="time" name="time"></td>
+					  <td><input type="time" id="time" name="time" min="08:00:00" max="18:00:00" value="14:00:00" required></td>
 					</tr>
 					 
 					<tr>
