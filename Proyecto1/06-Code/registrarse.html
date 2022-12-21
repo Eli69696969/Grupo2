@@ -1,6 +1,33 @@
 <!doctype html>
 <html>
 <head>
+	<style>
+		body{
+			background-color: #F9EBEA;
+		}
+		
+		a{
+			text-decoration: none;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		}
+		
+		h1{
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+			color: #763c28;
+		}
+		
+		a:link{
+			color: #696969;
+		}
+		
+		a:visited{
+			color: #696969;
+		}
+		
+		a:hover{
+			color: #302431;
+		}
+	</style>
 <meta charset="utf-8">
 <title>AM | Registrarse</title>
 <link rel="icon" type="image/x-icon" href="Imagenes/logo2.png">
@@ -10,7 +37,7 @@
 <body>
 	<header>
 		<div align="left">
-			<img src="imagenes/logo2.png" alt="Logo" width="250" height="120">	<!--- INSERTAR LOGO --->
+			<a href="Index.html"><img src="imagenes/logo2.png" alt="Logo" width="250" height="120"></a>	<!--- INSERTAR LOGO --->
 		</div>
 		<div align="right">
 			<a href="registrarse.html">Sing In</a>
@@ -24,7 +51,6 @@
 		
 <div align="center">	<!--- DIV PARA CENTRAR --->
 	<table width="1089" height="41.6" border="0">	<!--- SE INSERTA UNA TABLA --->
-		<caption> </caption>
 	  <tbody>
 		<tr>
 		  <td> <p align="center"><a  href="Index.html">INICIO</a></p></td>	
@@ -47,30 +73,28 @@
 		<div align="center">
 		<form>
 				<table width="200" border="0">
-					<caption> </caption>
 				  <tbody>
 					  
 					<h1>Sing In</h1>
 					  
 					<tr>
 					  <td><label for="ame">Name</label></td>
-					  <td><input type="text" name="usuario" id="usuario" pattern="^([A-Za-z]+)$" required/></td>
+					  <td><input type="text" id="name" name="name"></td>
 					</tr>
 					
 					<tr>
 					  <td><label for="last">Last Name</label></td>
-					  <td><input type="text" name="usuario" id="usuario" pattern="^([A-Za-z]+)$" required/></td>
+					  <td><input type="text" id="lastname" name="lastname"></td>
 					</tr>
 					  
 					<tr>
 					  <td><label for="email">Email</label></td>
-					  <td><input type="email" id="mail" name="use_mail" required/></td>
+					  <td><input type="email" id="email" name="email"></td>
 					</tr>
 					  
 					<tr>
 					  <td><label for="email">New Password</label></td>
 					  <td><input type="password" id="password" name="password"></td>
-
 					</tr>
 					
 					<tr>
