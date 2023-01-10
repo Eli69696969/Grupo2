@@ -28,6 +28,20 @@
 			color: #302431;
 		}
 		
+		div.center {
+  		text-align: center;	
+		}
+		
+		button{
+			padding-left: 13px;
+			padding-right: 13px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			border-radius: 8px;
+			color: black;
+    		background-color: #FDF5E6;
+			cursor: pointer;
+		}
 	</style>
 <meta charset="utf-8">
 <title>AM | Iniciar Sesión</title>
@@ -40,9 +54,9 @@
 			<a href="Index.html"><img src="imagenes/logo2.png" alt="Logo" width="250" height="120"></a>	<!--- INSERTAR LOGO --->
 		</div>
 		<div align="right">
-			<a href="registrarse.html">Sing In</a>
+			<a href="registrarse.html">Registrarse</a>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="iniciar.html">Log In</a>
+			<a href="iniciar.html">Iniciar sesión</a>
 		</div>
 	</header>
 		
@@ -71,7 +85,7 @@
 
 
 		<div align="center">
-			<h1>Log In</h1>
+			<h1>Iniciar Sesión</h1>
 				<table width="401" border="1" padding-left: 920px;>
 				<tr>
 				<td>
@@ -79,10 +93,12 @@
 					<label placeholder="Email">Email: </label>
 					<input type="email" id="email" name="email" required placeholder="Su Email debe contener un @" autofocus><br><br>
 
-					<label for="nombre">Password: </label>
+					<label for="nombre">Contraseña: </label>
 					<input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required><br><br><br>
-
+					
+					<div class="center">
 					<button type="submit" class="boton">Enviar</button>
+					</div>
 					</form>
 				</td>
 	  			</tr>
