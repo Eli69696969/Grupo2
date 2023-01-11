@@ -27,6 +27,17 @@
 		a:hover{
 			color: #302431;
 		}
+		
+		button{
+			padding-left: 13px;
+			padding-right: 13px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			border-radius: 8px;
+			color: black;
+    		background-color: #FDF5E6;
+			cursor: pointer;
+		}
 	</style>
 <meta charset="utf-8">
 <title>AM | Compras</title>
@@ -74,62 +85,64 @@
 	  <tr>
 		<td>
 		  <form name="form1" method="get" >
-			<p align="center">SHOPPING</p>
+			<strong><p align="center">COMPRA</p></strong>
 
-			  <p><b>Product dates</b></p>
+			  <p><b>Datos del Producto</b></p>
 
-			  <label for="idproducto">ID product</label>
-			  <input type="text" name="idproducto" id="idproducto" autofocus>
+			  <label for="idproducto">ID producto</label>
+			  <input type="text" name="idproducto" id="idproducto">
 			  
 			  <p>
-				<b>Type of furniture:</b>
+				<b>Tipo de muebles::</b>
 			  </p>
 
 			  <label>
-				<input type="radio" name="tipo" value="bedroom" id="tipo_1">
-			  	Bedroom
+				<input type="radio" name="tipo" value="Habitacion" id="tipo_1">
+			  	Habitacion
 			  </label><br>
 				
 			  <label>
-				<input type="radio" name="tipo" value="kitchen" id="tipo_2">
-				Kitchen
+				<input type="radio" name="tipo" value="Cocina" id="tipo_2">
+				Cocina
 			  </label><br>
 				
 			  <label>
-				<input type="radio" name="tipo" value="room" id="tipo_3">
-				Living room
+				<input type="radio" name="tipo" value="Sala" id="tipo_3">
+				Sala de Estar
 			  </label><br>        
 
 
 			  <p>
-			   <label for="fprox">Date: </label>
+			   <label for="fprox">Fecha: </label>
 			   <input type="date" name="compra" id="compra">
 			  </p>
 
 			  <p>
-			  <label for="cantidad">Amount</label>
+			  <label for="cantidad">Cantidad</label>
 			  <input type="number" name="cantidad" id="cantidad">
 			  <br>
 			  </p>
 			  
 			  <p>
-				  <label for="envio">Delivery type</label>
+				  <label for="envio">Tipo de Entrega</label>
 				  <select name="envio" id="ecivil2">
-					<option value="dm">At home</option>
-					<option value="se">Staff</option>
-					<option value="ea">Agency withdrawal</option>
-					<option value="ep">Shipping to Province</option>
+					<option value="pa">...</option>
+					<option value="dm">En Casa</option>
+					<option value="se">Personal</option>
+					<option value="ea">Retiro de Agencia</option>
+					<option value="ep">Envios a Provincia</option>
 				  </select>
 		  	  </p>
 			  
-				<b>Payment Methods</b>
+				<b>Metodos de Pago</b>
 			<p>
-			  <label for="pago">Enter payment methodo</label>
-			  <select name="pago" id="pago" >
-				<option value="pe">Cash</option>
-				<option value="pt">Credit card</option>
-				<option value="pd">Deposit</option>
-				<option value="pd">Transfer</option>
+			  <label for="pago">Introduce el metodo de pago</label>
+			  <select name="pago" id="pago">
+				<option value="pa">...</option>
+				<option value="pe">Dinero</option>
+				<option value="pt">Tarjeta de Credito</option>
+				<option value="pd">Deposito</option>
+				<option value="pd">Transferencia</option>
 			  </select>
 			</p>
 			  
@@ -139,22 +152,24 @@
 			</p>
 
 
-			<b>BILLING DATA</b>
+			<b>Datos de Facturacion</b>
 			  
 			<p>
-		   		<label for="descripcion">Description of delivered products: </label>
+		   		<label for="descripcion">Descripcion de los productos entregados: </label>
 		  	 	<input type="text" name="descripcion" id="descripcion">
 			</p>
 			  
 			<p>
-			  <label for="cantidadtotal">Amount to be paid</label>
-			  <input type="number" name="cantidadtotal" id="cantidadtotal"><br>
+				<label for="cantidadtotal">Monto a pagar</label>
+				<input type="text" name="cantidadtotal" id="cantidadtotal"><br>
 			</p>
-
-		    <p>
-			  <input name="send" type="submit" value="Enviar">
-			  <input name="reset" type="reset" value="Borrar">
-		    </p>
+		    <center>
+			  <p>
+			  <button name="send" type="submit" value="Enviar">Enviar</button>
+			  <button name="reset" type="reset" value="Borrar">Borrar</button>
+			  </p>
+		    </center>
+			  
 			  
 	  	  </form>
 	  	</td>
@@ -172,6 +187,4 @@
 		</footer>
 	
 </body>
-	
-	
 </html>
