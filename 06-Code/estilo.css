@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+			background-color: #F9EBEA;
+		}
+		
+		a{
+			text-decoration: none;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		}
+		
+		h1{
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+			color: #763c28;
+		}
+		
+		a:link{
+			color: #696969;
+		}
+		
+		a:visited{
+			color: #696969;
+		}
+		
+		a:hover{
+			color: #302431;
+		}
