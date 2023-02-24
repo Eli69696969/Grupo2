@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <title>AM | Asesoria</title>
 <link rel="icon" type="image/x-icon" href="Imagenes/logo2.png">
-<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="../css/estilo.css">
+<script src="../js/ValidacionForm.js"></script>
 </head>
 
 <body>
@@ -27,15 +28,15 @@
 	<table width="1089" height="41.6" border="0">	<!--- SE INSERTA UNA TABLA --->
 	  <tbody>
 		<tr>
-		  <td> <p align="center"><a  href="Index.html">INICIO</a></p></td>	
+		  <td> <p align="center"><a  href="../Index.html">INICIO</a></p></td>	
 
 		  <td> <p align="center"><a href="Producto.html">PRODUCTOS</a></p></td>
 
 		  <td> <p align="center"><a href="contacto.html">CONTACTO</a></p></td>
 	
-		  <td> <p align="center"><a href="asesoria.html">ASESORIA</a></p></td>
+		  <td> <p align="center"><a href="asesoria.html">ASESORÍA</a></p></td>
 
-		  <td> <p align="center"><a href="Empresa.html">QUIENES SOMOS</a></p></td>
+		  <td> <p align="center"><a href="Empresa.html">¿QUIENES SOMOS?</a></p></td>
 		</tr>
 	  </tbody>
 	</table>
@@ -52,16 +53,20 @@
 				<td>
 					<form>
 						<label for="name">Nombre</label>
-						<input type="text" id="name" name="name" maxlength="25" required autofocus><br><br>
+						<input type="text" id="name" name="name" maxlength="25" onblur="return validateNombres()" required autofocus>
+						<span id="name-error" class="error-message"></span><br><br>
 
 						<label for="last">Apellido </label>
-						<input type="text" id="lastname" name="lastname" maxlength="30" required><br><br>
+						<input type="text" id="lastname" name="lastname" maxlength="30" onblur="return validateApellidos()" required>
+						<span id="lastname-error" class="error-message"></span><br><br>
 
 						<label for="email">Correo Electronico</label>
-						<input type="email" id="email" name="email" required><br><br>	
+						<input type="email" id="email" name="email" onblur="return validateEmail()" required>
+						<span id="email-error" class="error-message"></span><br><br>	
 
 						<label for="phone">Numero de Celular</label>
-						<input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" required><br><br>
+						<input type="tel" id="phone" name="phone" onblur="return validateFono()" required>
+						<span id="phone-error" class="error-message"></span><br><br>
 
 						<label for="date">Fecha para la llamada</label>
 						<input type="date" id="date" name="date" value="2022¿3-06-01" required><br><br>
