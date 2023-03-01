@@ -95,3 +95,15 @@ function validateFono() {
 		
     }
 }
+function validatePassword() {
+  let inp = document.getElementById('password').value;
+  
+  let nameError = document.getElementById('password-error');
+
+  if (inp.trim() === '') {
+    nameError.innerText = "The password cannot be empty";
+    nameError.style.display = 'inline';
+    return false;
+  
+  }
+}
