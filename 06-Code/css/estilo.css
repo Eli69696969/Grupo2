@@ -53,3 +53,18 @@ form{
   }
 
 
+.changue {
+    height: 540px;
+}
+
+button img {
+    height: 94px;
+}
+
+div.mainContent {
+    width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+
