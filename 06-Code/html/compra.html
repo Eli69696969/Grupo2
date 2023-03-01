@@ -54,7 +54,8 @@
 			  <p><b>Datos del Producto</b></p>
 
 			  <label for="idproducto">ID producto</label>
-			  <input type="text" name="idproducto" id="idproducto">
+			  <input type="text" name="id" id="id" placeholder="Ingrese el ID" autofocus onblur="return validateId()">
+			  <span id="id-error" class="error-message"></span><br>
 			  
 			  <p>
 				<b>Tipo de muebles:</b>
@@ -78,7 +79,7 @@
 
 			  <p>
 			   <label for="fprox">Fecha: </label>
-			   <input type="date" name="compra" id="compra">
+			   <input type="date" name="compra" id="compra" value="20223-06-01">
 			  </p>
 
 			  <p>

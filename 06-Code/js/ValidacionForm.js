@@ -4,7 +4,31 @@ let expressions = {
     model: /^[a-zA-Z\s.-\d]{1,10}$/,
 	nombres: /^[a-zA-Z\s-_\d]{1,30}$/,
 	email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-	fono: /^(?:\+593|593|0)?(?:9)(?:2|3|4|5|6|7|8|9)(?:\d{7})$/
+	fono: /^(?:\+593|593|0)?(?:9)(?:2|3|4|5|6|7|8|9)(?:\d{7})$/,
+	ID: /^d{3}-\d{2}-\d{4}$,
+	Numeros: ^[0-9]+$
+}
+
+function validateId() {
+    let inp = document.getElementById('id').value;
+    let exprenombre = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let nameError = document.getElementById('id-error');
+  
+    if (inp.trim() === '') {
+      nameError.innerText = "The id cannot be empty";
+      nameError.style.display = 'inline';
+      return false;
+		
+    } else if (!exprenombre.test(inp)) {
+      nameError.innerText = "Please id the name correctly.";
+      nameError.style.display = 'inline';
+      return false;
+		
+    } else {
+      nameError.style.display = 'none';
+      return true;
+		
+    }
 }
 
 function validateNombres() {
